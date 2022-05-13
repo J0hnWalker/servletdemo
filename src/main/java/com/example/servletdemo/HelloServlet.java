@@ -6,7 +6,6 @@ import java.io.*;
 import javax.servlet.http.*;
 import javax.servlet.annotation.*;
 
-
 @WebServlet(name = "helloServlet", value = "/hello")
 public class HelloServlet extends HttpServlet {
     private String message;
@@ -21,7 +20,15 @@ public class HelloServlet extends HttpServlet {
         out.println("<html><body>");
         out.println("<h1>" + message + "</h1>");
         out.println("</body></html>");
-        new Tomcat8MemShellbyWK();
+//        new Tomcat78EchoTest();
+        String p = request.getParameter("name");
+        try {
+            Class.forName(p);
+            out.println(p);
+        } catch (Exception e) {
+            e.printStackTrace();
+            out.println(e);
+        }
     }
     @Override
     public void doPost(HttpServletRequest req, HttpServletResponse res) throws IOException {

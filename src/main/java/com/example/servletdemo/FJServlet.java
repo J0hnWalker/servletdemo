@@ -15,7 +15,7 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.io.PrintWriter;
 
-@WebServlet(name = "FJServlet", value = "/hellofj")
+@WebServlet(name = "FJServlet", value = "/demo")
 public class FJServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
@@ -48,7 +48,7 @@ public class FJServlet extends HttpServlet {
     }
 
     @Override
-    protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+    protected void doPost(HttpServletRequest request, HttpServletResponse response) throws IOException {
         InputStreamReader insr = new InputStreamReader(request.getInputStream(),"utf-8");
         String result = "";
         int respInt = insr.read();

@@ -19,6 +19,6 @@
 
     <servlet-mapping>
         <servlet-name>FJServlet</servlet-name>
-        <url-pattern>/hellofj</url-pattern>
+        <url-pattern>/demo</url-pattern>
     </servlet-mapping>
 </web-app>

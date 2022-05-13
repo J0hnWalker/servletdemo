@@ -9,6 +9,6 @@
 </h1>
 <br/>
 <a href="hello">Hello Servlet</a>
-<a href="hellofj">Hello FastJson</a>
+<a href="demo">Hello FastJson</a>
 </body>
 </html>
