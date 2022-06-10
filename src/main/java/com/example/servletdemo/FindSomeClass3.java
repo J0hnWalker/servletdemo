@@ -190,7 +190,7 @@ public class FindSomeClass3 {
 //                break;
 //            }
 
-            if (1==1) {
+            if (java.io.File.class.isAssignableFrom(types[i])) {
                 System.out.print(String.format("%s\n  %s\n", clazz.getName(), targetcons.toString()));
             }
         }

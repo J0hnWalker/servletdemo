@@ -10,5 +10,6 @@
 <br/>
 <a href="hello">Hello Servlet</a>
 <a href="demo">Hello FastJson</a>
+<a href="conn">just connect</a>
 </body>
 </html>

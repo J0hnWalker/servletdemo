@@ -21,4 +21,13 @@
         <servlet-name>FJServlet</servlet-name>
         <url-pattern>/demo</url-pattern>
     </servlet-mapping>
+    <servlet>
+        <servlet-name>urlconnservlet</servlet-name>
+        <servlet-class>com.example.servletdemo.URLConnServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>urlconnservlet</servlet-name>
+        <url-pattern>/conn</url-pattern>
+    </servlet-mapping>
 </web-app>

